@@ -15,11 +15,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-YEG1NV53YE');
+  FundraiseUp.on('donationComplete', function(details) {
+  var fund = details.customFields.fund || '';
+  var appeal = details.customFields.appeal || '';
+  var source = details.customFields.source || '';
+});
 </script>
-    <script>
-      FundraiseUp.on('checkoutOpen', function(details) {	
-    console.log(details);
-  });
     </script>
     
     <title>Fundraise Debug!</title>
@@ -40,5 +41,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
     <a href="#XJKDHSTQ" style="display: none"></a>
+    <script>
+  FundraiseUp.on('checkoutOpen', function(details) {	
+    console.log(details);
+  });
+</script>
   </body>
 </html>
