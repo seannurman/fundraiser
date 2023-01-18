@@ -15,6 +15,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-YEG1NV53YE');
+  FundraiseUp.on('donationComplete', function(details) {
+  var fund = details.customFields.fund || '';
+  var appeal = details.customFields.appeal || '';
+  var source = details.customFields.source || '';
+  });
 </script>
     
     <title>Fundraise Test!</title>
