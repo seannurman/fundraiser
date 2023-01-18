@@ -15,14 +15,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-YEG1NV53YE');
-  FundraiseUp.on('donationComplete', function(details) {
-  var fund = details.customFields.fund || '';
-  var appeal = details.customFields.appeal || '';
-  var source = details.customFields.source || '';
-  });
 </script>
+    <script>
+      FundraiseUp.on('checkoutOpen', function(details) {	
+    console.log(details);
+  });
+    </script>
     
-    <title>Fundraise Test2!</title>
+    <title>Fundraise Debug!</title>
     <!-- Fundraise Up: the new standard for online giving -->
 <script>(function(w,d,s,n,a){if(!w[n]){var l='call,catch,on,once,set,then,track'
 .split(','),i,o=function(n){return'function'==typeof n?o.l.push([arguments])&&o
