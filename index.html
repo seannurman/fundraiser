@@ -1,52 +1,101 @@
-<!doctype html>
-<html>
-  <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WDQLSG9');</script>
-<!-- End Google Tag Manager -->
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YEG1NV53YE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-YEG1NV53YE');
-  FundraiseUp.on('donationComplete', function(details) {
-  var fund = details.customFields.fund || '';
-  var appeal = details.customFields.appeal || '';
-  var source = details.customFields.source || '';
-  var supporter = details.customFields.supporter || '';
-  var donation = details.customFields.donations || '';
-});
-</script>
-    </script>
-    
-    <title>FundDebug!</title>
-    <!-- Fundraise Up: the new standard for online giving -->
-<script>(function(w,d,s,n,a){if(!w[n]){var l='call,catch,on,once,set,then,track'
-.split(','),i,o=function(n){return'function'==typeof n?o.l.push([arguments])&&o
-:function(){return o.l.push([n,arguments])&&o}},t=d.getElementsByTagName(s)[0],
-j=d.createElement(s);j.async=!0;j.src='https://cdn.fundraiseup.com/widget/'+a;
-t.parentNode.insertBefore(j,t);o.s=Date.now();o.v=4;o.h=w.location.href;o.l=[];
-for(i=0;i<7;i++)o[l[i]]=o(l[i]);w[n]=o}
-})(window,document,'script','FundraiseUp','AEMZUDUM');</script>
-<!-- End Fundraise Up -->
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDQLSG9"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-    <a href="#XJKDHSTQ" style="display: none"></a>
-    <script>
-  FundraiseUp.on('checkoutOpen', function(details) {	
-    console.log(details);
-  });
-</script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Grayscale - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WDQLSG9');
+        </script>
+        <!-- End Google Tag Manager -->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YEG1NV53YE"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YEG1NV53YE');
+            FundraiseUp.on('donationComplete', function(details) {
+            var fund = details.customFields.fund || '';
+            var appeal = details.customFields.appeal || '';
+            var source = details.customFields.source || '';
+            var supporter = details.customFields.supporter || '';
+            var donation = details.customFields.donations || '';
+            });
+        </script>
+        </script>
+        <title>FundDebug!</title>
+        <!-- Fundraise Up: the new standard for online giving -->
+        <script>(function(w,d,s,n,a){if(!w[n]){var l='call,catch,on,once,set,then,track'
+            .split(','),i,o=function(n){return'function'==typeof n?o.l.push([arguments])&&o
+            :function(){return o.l.push([n,arguments])&&o}},t=d.getElementsByTagName(s)[0],
+            j=d.createElement(s);j.async=!0;j.src='https://cdn.fundraiseup.com/widget/'+a;
+            t.parentNode.insertBefore(j,t);o.s=Date.now();o.v=4;o.h=w.location.href;o.l=[];
+            for(i=0;i<7;i++)o[l[i]]=o(l[i]);w[n]=o}
+            })(window,document,'script','FundraiseUp','AEMZUDUM');
+        </script>
+        <!-- End Fundraise Up -->
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Fundraise Up Example</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">TEST DONATION</h1>
+                        <p class="text-white-50 mx-auto mt-2 mb-5">Your support is invaluable to us. By making a donation today, you are directly contributing to our mission of creating positive change in the lives of those in need. Every donation, regardless of the amount, helps us make a meaningful difference.</p>
+                        <p class="text-white-50 mx-auto mt-2 mb-5">When you donate, your contribution goes towards supporting a variety of projects and initiatives aimed at addressing pressing social issues. From providing essential resources to vulnerable communities, supporting education and healthcare programs, to empowering individuals and families, your generosity has a lasting impact. Together, we can create a brighter future for all.</p>
+                        <a href="#XJKDHSTQ" style="display: none"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script>
+            FundraiseUp.on('checkoutOpen', function(details) {	
+              console.log(details);
+            });
+         </script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+            window.fundraiseup_livemode = false;
+        </script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
