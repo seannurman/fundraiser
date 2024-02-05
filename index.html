@@ -76,6 +76,10 @@
 </head>
 
 <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+
+  <script>
+    window.fundraiseup_livemode = true;
+  </script>
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5N86WC7D"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -100,32 +104,31 @@
           <li><a href="index.html#services">Services</a></li>
           <li><a href="index.html#portfolio">Portfolio</a></li>
           <li><a href="index.html#team">Team</a></li>
-          <li><a href="blog.html?utm_source=github&utm_medium=test">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li class="dropdown has-dropdown"><a href="#"><span>Languages</span> <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
-              <li><a href="https://seannurman.github.io/fundraiser/#ar/">Arabic</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#zh-cn/">Chinese Simplified</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#zh-tw/">Chinese Traditional</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#da/">Danish</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#nl/">Dutch</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#en-ca/">English (Canada)</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#en-gb/">English (Great Britain)</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#en-us/">English (USA)</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#fi/">Finnish</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#fr-ca/">French (Cadana)</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#fr-fr/">French (France)</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#de/">German</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#hu/">Hungarian</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#it/">Italian</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#ja/">Japanese</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#ko/">Korean</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#no/">Norwegian</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#pt-br/">Portuguese (Brazil)</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#pt-pt/">Portuguese (Portugal)</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#ru/">Russian</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#es/">Spanish</a></li>
-              <li><a href="https://seannurman.github.io/fundraiser/#sv/">Swedish</a></li>
-
+              <li><a href="#" onclick="switchLanguage('ar')">Arabic</a></li>
+              <li><a href="#" onclick="switchLanguage('zh-cn')">Chinese Simplified</a></li>
+              <li><a href="#" onclick="switchLanguage('zh-tw')">Chinese Traditional</a></li>
+              <li><a href="#" onclick="switchLanguage('da')">Danish</a></li>
+              <li><a href="#" onclick="switchLanguage('nl')">Dutch</a></li>
+              <li><a href="#" onclick="switchLanguage('en-ca')">English (Canada)</a></li>
+              <li><a href="#" onclick="switchLanguage('en-gb')">English (Great Britain)</a></li>
+              <li><a href="#" onclick="switchLanguage('en-us')">English (USA)</a></li>
+              <li><a href="#" onclick="switchLanguage('fi')">Finnish</a></li>
+              <li><a href="#" onclick="switchLanguage('fr-ca')">French (Canada)</a></li>
+              <li><a href="#" onclick="switchLanguage('fr-fr')">French (France)</a></li>
+              <li><a href="#" onclick="switchLanguage('de')">German</a></li>
+              <li><a href="#" onclick="switchLanguage('hu')">Hungarian</a></li>
+              <li><a href="#" onclick="switchLanguage('it')">Italian</a></li>
+              <li><a href="#" onclick="switchLanguage('ja')">Japanese</a></li>
+              <li><a href="#" onclick="switchLanguage('ko')">Korean</a></li>
+              <li><a href="#" onclick="switchLanguage('no')">Norwegian</a></li>
+              <li><a href="#" onclick="switchLanguage('pt-br')">Portuguese (Brazil)</a></li>
+              <li><a href="#" onclick="switchLanguage('pt-pt')">Portuguese (Portugal)</a></li>
+              <li><a href="#" onclick="switchLanguage('ru')">Russian</a></li>
+              <li><a href="#" onclick="switchLanguage('es')">Spanish</a></li>
+              <li><a href="#" onclick="switchLanguage('sv')">Swedish</a></li>
             </ul>
           </li>
           <li><a href="index.html#contact">Contact</a></li>
@@ -1259,6 +1262,26 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    function switchLanguage(languageCode) {
+      // Update the content of the page
+      for (const key in content[languageCode]) {
+          if (content[languageCode].hasOwnProperty(key)) {
+              const element = document.getElementById(key);
+              if (element) {
+                  element.innerHTML = content[languageCode][key];
+              }
+          }
+      }
+    }
+
+  // Example of attaching event listeners
+  document.getElementById('language-switcher').addEventListener('change', function(event) {
+      switchLanguage(event.target.value);
+  });
+    </script>
+    
 
 </body>
 
