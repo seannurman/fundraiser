@@ -34,6 +34,35 @@
   for(i=0;i<7;i++)o[l[i]]=o(l[i]);w[n]=o}
   })(window,document,'script','FundraiseUp','AXBLUZTC');</script>
   <!-- End Fundraise Up -->
+  <!-- Custom Script of Boystown -->
+  <script>
+    try {
+        FundraiseUp.on('donationComplete', function(details) {
+            var memberid = details.customFields.mid || '';
+            var subscriberid = details.customFields.sfmc_sub || '';
+            var jobid = details.customFields.j || '';
+            var listid = details.customFields.l || '';
+            var urlid = details.customFields.u || '';
+            var batchid = details.customFields.jb || '';
+            console.log("SFMC URL Conversion");
+            var convid = "1";
+            var displayorder = "1";
+            var linkalias = details.campaign.name;
+            var giftAmount = details.donation.amount;
+            var dataset = '<data amt="' + giftAmount + '" unit="Dollars" accumulate="true" />';
+            var imgSrc = "http://click.s12.exacttarget.com/conversion.aspx?xml=<system><system_name>tracking</system_name><action>conversion</action><member_id>" + memberid + "</member_id><job_id>" + jobid + "</job_id><sub_id>" + subscriberid + "</sub_id><list>" + listid + "</list><original_link_id>" + urlid + "</original_link_id><BatchID>" + batchid + "</BatchID><conversion_link_id>" + convid + "</conversion_link_id><link_alias>" + linkalias + "</link_alias><display_order>" + displayorder + "</display_order><data_set>" + dataset + "</data_set></system>";
+            var img = document.createElement('img');
+            img.height = img.width = 1;
+            img.style = 'border-style:none';
+            img.alt = '';
+            img.src = imgSrc;
+            document.body.append(img);
+        });
+    } catch (error) {
+        console.log("SFMC Script Fail")
+        console.log(error)
+    }         
+  </script>
   <!-- Matomo -->
   <script>
     var _paq = window._paq = window._paq || [];
