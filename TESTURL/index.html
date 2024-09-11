@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Selection and Cart</title>
+    <!-- Fundraise Up: the new standard for online giving -->
+  <script>(function(w,d,s,n,a){if(!w[n]){var l='call,catch,on,once,set,then,track'
+    .split(','),i,o=function(n){return'function'==typeof n?o.l.push([arguments])&&o
+    :function(){return o.l.push([n,arguments])&&o}},t=d.getElementsByTagName(s)[0],
+    j=d.createElement(s);j.async=!0;j.src='https://cdn.funstaging.com/widget/'+a+'';
+    t.parentNode.insertBefore(j,t);o.s=Date.now();o.v=4;o.h=w.location.href;o.l=[];
+    for(i=0;i<7;i++)o[l[i]]=o(l[i]);w[n]=o}
+    })(window,document,'script','FundraiseUp','AXBLUZTC');</script>
+    <!-- End Fundraise Up -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-8">
+            <h2>Products</h2>
+            <div class="product-list">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+        <div class="col-lg-4" class="cart-col">
+            <h2>Cart</h2>
+            <div id="cartItems" class="mb-3">
+                <!-- Cart items will be shown here -->
+            </div>
+            <h4>Total: <span id="totalAmount">$0.00</span></h4>
+            <a id="checkoutLink" href="#" class="btn btn-success">Checkout</a>
+        </div>
+    </div>
+</div>
+<script src="custom.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
